@@ -47,7 +47,7 @@ def serving_input_receiver_fn():
 
 ```python
 
-predictor_fn = tf.contrib.predictor.from_saved_model(export_dir="output_dit/bert-24-layer")
+predictor_fn = tf.contrib.predictor.from_saved_model(export_dir="output_dir/bert-24-layer")
 
 predictions = predictor_fn({'examples': examples})
 
@@ -73,8 +73,8 @@ $ docker pull tensorflow/serving:latest-gpu
 - MODEL_NAME : 
 - target : 
 
-```bash
-$ docker run --runtime=nvidia -p 8501:8501 --mount type=bind,source=/home/lgsp_gcp/XX_KORQUAD_MODEL/24-layer-none, target=/models/bert -e MODEL_NAME=bert -t tensorflow/serving:latest-gpu &
+```python
+docker run --runtime=nvidia -p 8501:8501 --mount type=bind,source=/output_dir/24-layer-none, target=/models/bert -e MODEL_NAME=bert -t tensorflow/serving:latest-gpu &
 ```
 
 
