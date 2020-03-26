@@ -53,14 +53,15 @@ predictions = predictor_fn({'examples': examples})
 
 ```
 
-
-
-
-
-
 <br>
 
 ## TensorFlow Serving with Docker
+
+TensorFlow Serving을 이용하여 모델을 서비스하기 위해서는 관련 Docker를 사용하여야 한다. 아래 명령어를 통해 최신 TensorFlow Serving Docker 이미지를 가져올 수 있다. 또한 서비스 하고자 하는 Tensorflow 버전에 맞게 다른 Docker를 사용 가능하다.
+(참고 : https://hub.docker.com/r/tensorflow/serving/tags/)
+
+
+
 
 https://www.tensorflow.org/tfx/serving/docker
 
