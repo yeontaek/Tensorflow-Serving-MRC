@@ -74,7 +74,7 @@ $ docker pull tensorflow/serving:latest-gpu
 - target : 
 
 ```bash
-docker run --runtime=nvidia -p 8501:8501 --mount type=bind,source=/home/lgsp_gcp/XX_KORQUAD_MODEL/24-layer-none, target=/models/bert -e MODEL_NAME=bert -t tensorflow/serving:latest-gpu &
+$ docker run --runtime=nvidia -p 8501:8501 --mount type=bind,source=/home/lgsp_gcp/XX_KORQUAD_MODEL/24-layer-none, target=/models/bert -e MODEL_NAME=bert -t tensorflow/serving:latest-gpu &
 ```
 
 
