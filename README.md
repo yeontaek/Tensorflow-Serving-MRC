@@ -2,11 +2,11 @@
 
 This repository is for Korean MRC service methods using Tensorflow Serving.
 
-![Tensorflow Serving](https://yjucho1.github.io/assets/img/2018-12-26/fig2.jpeg)
-
 * Whale extension, 한국어 MRC : https://store.whale.naver.com/detail/hkmamenommegcobnflgojmfikpkfgjng
 
 * Chrome extension, 한국어 MRC : 준비중
+
+![Tensorflow Serving](https://yjucho1.github.io/assets/img/2018-12-26/fig2.jpeg) {: width="300" height="300"}
 
 ## Export Estimator model with BERT
 
