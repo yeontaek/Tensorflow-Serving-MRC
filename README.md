@@ -6,8 +6,6 @@ This repository is for Korean MRC service methods using Tensorflow Serving.
 
 * Chrome extension, 한국어 MRC : 준비중
 
-<br>
-
 ## Export Estimator model with BERT
 
 
@@ -77,6 +75,7 @@ $ docker pull tensorflow/serving:latest-gpu
 docker run --runtime=nvidia -p 8501:8501 --mount type=bind,source=output_dir/bert-24-layer,
 target=/models/bert -e MODEL_NAME=bert -t tensorflow/serving:latest-gpu &
 ```
+<br>
 
 
 ## TensorFlow Serving REST API
