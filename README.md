@@ -45,7 +45,7 @@ def serving_input_receiver_fn():
 
 ### 1.2. Load Model 
 
-생성된 pb파일은  <b>from_saved_model</b>을 사용하여 호출한다. 모델을 load하고 prediction  방법은 아래와 같다. 
+생성된 pb파일은  <b>from_saved_model</b>을 사용하여 호출한다. 모델을 load하고 prediction 하는 방법은 아래와 같다. 
 
 ```python
 
@@ -63,16 +63,16 @@ TensorFlow Serving을 이용하여 모델을 서비스하기 위해서는 관련
 ](https://hub.docker.com/r/tensorflow/serving/tags/))
 
 ```bash
-$ docker pull tensorflow/serving
+$ docker pull tensorflow/serving (CPU)
 
-$ docker pull tensorflow/serving:latest-gpu
+$ docker pull tensorflow/serving:latest-gpu (GPU)
 ```
 
-본 repository에서는 nvidia-gpu를 이용한 docker 이미지 실행 방법에 대해서만 설명한다. 설치된 Docker를 이용하여, Tensorflow Serving 명령어는 아래와 같다.
+본 repository에서는 nvidia-gpu를 이용한 docker 이미지 실행 방법에 대해서만 설명한다. 설치된 Docker를 이용하여, Tensorflow Serving server를 실행하는 명령어는 아래와 같다.
 
 - port : port 번호
 - source : pb모델의 경로 
-- target : post 형태로 호출한 모델 이름 
+- target : post 형태로 호출한 모델 이름 (e.g. http://ip:port/v1/models/bert:predict)
 
 ```python
 docker run --runtime=nvidia -p 8501:8501 --mount type=bind,source=output_dir/bert-24-layer,
