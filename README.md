@@ -57,7 +57,7 @@ predictions = predictor_fn({'examples': examples})
 
 <br>
 
-## 2. TensorFlow Serving with Docker
+## 2. TensorFlow Serving Server with Docker
 
 Tensorflow serving을 위해서는 위에서 생성한 pb 파일을 활용하여, Tensorflow serving server를 실행해야 한다. 이를 위해 관련 Docker 이미지를 이용해 실행하는 방법에 대해서 설명한다. 먼저 아래 명령어를 통해 최신 TensorFlow Serving Docker 이미지를 가져온다. 또는 서비스 하고자 하는 Tensorflow 버전에 맞는 Docker 이미지를 가져와서 사용하면 된다. ([docker hub](https://hub.docker.com/r/tensorflow/serving/tags/))
 
