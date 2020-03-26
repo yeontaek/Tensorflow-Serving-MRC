@@ -9,6 +9,8 @@ This repository is for Korean MRC service methods using Tensorflow Serving.
 ## Export Estimator model with BERT
 
 
+1. Export Model 
+
 ```python
 
 estimator.export_savedmodel(export_dir_base="output_dit/24-layer-none",
@@ -30,9 +32,11 @@ def serving_input_receiver_fn():
     features = tf.parse_example(serialized_tf_example, feature_spec)
     return tf.estimator.export.ServingInputReceiver(features, receiver_tensors)
 ```
+<br>
+2. Load Model 
+
 
 <br>
-
 
 ## TensorFlow Serving with Docker
 
