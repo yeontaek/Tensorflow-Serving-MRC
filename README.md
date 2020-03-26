@@ -1,4 +1,4 @@
-# Tensorflow-Serving-MRC(정리중)
+# Tensorflow Serving MRC(정리중)
 
 This repository is for Korean MRC service methods using Tensorflow Serving.
 
