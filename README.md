@@ -85,7 +85,16 @@ target=/models/bert -e MODEL_NAME=bert -t tensorflow/serving:latest-gpu &
 
 실행된 Tensorflow Serving server에 Prediction 하기 위해서는 POST 형태로 호출해야 한다. 특히 json 변수에는 아래 정보가 포함되어 있어야 한다.
 
-- signature_name : 
+- signature_name : <b>saved_model_cli</b> 명령어를 통해 pb파일의 signature_name을 확인해야 한다. 
+ 
+ ```bash
+$ saved_model_cli show --dir bert-24-layer/1/ --all
+```
+
+
+
+ 
+ 
 - instances : prediction 하고자 하는 example(paragraph, question) 값을 입력한다. SerializeToString으로 된 example의 경우 반드시 base64 인코딩을 해서 전달해야 한다. 
 
 ```python
