@@ -2,7 +2,7 @@
 
 This repository is for Korean MRC service methods using Tensorflow Serving.
 
-I developed the Whale expansion app using Tensorflow Serving and opened it to the link below.
+I developed the Whale extension app using Tensorflow Serving and opened it to the link below.
 
 * Whale extension, 한국어 MRC : https://store.whale.naver.com/detail/hkmamenommegcobnflgojmfikpkfgjng
 
