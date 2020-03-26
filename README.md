@@ -96,6 +96,10 @@ resp = requests.post('http://ip:port/v1/models/bert:predict',
                    	 {'examples': {'b64': base64.b64encode(example.SerializeToString()).decode('utf-8')}}
                 ]})
 resp.raise_for_status()
+
+
+start_logits = json.loads(resp.text)["predictions"][0]["start_logits"]
+end_logits = json.loads(resp.text)["predictions"][0]["end_logits"]
 ```
 
 
