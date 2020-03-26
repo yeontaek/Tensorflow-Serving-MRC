@@ -22,15 +22,15 @@ Estimator model을 export할 경우 export_savedmodel을 사용하여, BERT모�
 ```python
 
 estimator.export_savedmodel(export_dir_base="output_dir/bert-24-layer",
-                             checkpoint_path=FLAGS.init_checkpoint,
+                             checkpoint_path=init_checkpoint,
                              serving_input_receiver_fn=serving_input_receiver_fn)
 
 def serving_input_receiver_fn():
     feature_spec = {
 		"unique_ids": tf.FixedLenFeature([], tf.int64),
-		"input_ids": tf.FixedLenFeature([FLAGS.max_seq_length], tf.int64),
-		"input_mask": tf.FixedLenFeature([FLAGS.max_seq_length], tf.int64),
-		"segment_ids": tf.FixedLenFeature([FLAGS.max_seq_length], tf.int64),
+		"input_ids": tf.FixedLenFeature([max_seq_length], tf.int64),
+		"input_mask": tf.FixedLenFeature([max_seq_length], tf.int64),
+		"segment_ids": tf.FixedLenFeature([max_seq_length], tf.int64),
 	}
 
     serialized_tf_example = tf.placeholder(dtype=tf.string,
@@ -43,6 +43,7 @@ def serving_input_receiver_fn():
 
 ### 2. Load Model 
 
+생성된 pb파일은  <b>from_saved_model</b>을 사용하여 호출한다. 모델을 load하고 prediction  방법은 아래와 같다. 
 
 ```python
 
