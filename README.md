@@ -15,7 +15,7 @@ This repository is for Korean MRC service methods using Tensorflow Serving.
 
 ### 1.1. Export Model 
 
-Estimator model을 export할 경우 <b>export_savedmodel</b>을 사용하여, BERT모델을 pb 형태로 구성한다. export_savedmodel의 매개변수는 아래와 같다. 
+Estimator model을 export할 경우 <b>export_savedmodel</b>을 사용하여, BERT모델을 pb 형태로 구성해야 한다. export_savedmodel의 매개변수는 아래와 같다. 
 
  - export_dir_base : pb 저장 경로 
  - checkpoint_path : ckpt 모델 경로(e.g. bert_model.ckpt)
