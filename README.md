@@ -2,6 +2,8 @@
 
 This repository is for Korean MRC service methods using Tensorflow Serving.
 
+![Tensorflow Serving](https://yjucho1.github.io/assets/img/2018-12-26/fig2.jpeg)
+
 * Whale extension, 한국어 MRC : https://store.whale.naver.com/detail/hkmamenommegcobnflgojmfikpkfgjng
 
 * Chrome extension, 한국어 MRC : 준비중
@@ -95,5 +97,9 @@ resp.raise_for_status()
 https://hub.docker.com/r/tensorflow/serving/tags/
 
 https://www.tensorflow.org/tfx/serving/docker
+
+https://stackoverflow.com/questions/51776489/correct-payload-for-tensorflow-serving-rest-api
+
+
 
 
