@@ -64,9 +64,9 @@ $ docker pull tensorflow/serving
 $ docker pull tensorflow/serving:latest-gpu
 ```
 
-본 repository에서는 nvidia-gpu를 이용한 docker 이미지 실행 방법에 대해서만 설명한다. 설치된 Docker를 이용하여, Tensorflow Serving을 위해서는 아래와 같다.
+본 repository에서는 nvidia-gpu를 이용한 docker 이미지 실행 방법에 대해서만 설명한다. 설치된 Docker를 이용하여, Tensorflow Serving 명령어는 아래와 같다.
 
-- p : port 번호
+- port : port 번호
 - source : pb모델의 경로 
 - target : post 형태로 호출한 모델 이름 
 
