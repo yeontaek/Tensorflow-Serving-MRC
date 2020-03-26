@@ -17,7 +17,7 @@ Estimator model을 export할 경우 export_savedmodel을 사용하여, BERT모�
 
  - export_dir_base : pb 저장 경로 
  - checkpoint_path : ckpt 모델 경로(e.g. bert_model.ckpt)
- - serving_input_fn : 
+ - serving_input_fn : 모델의 입력 스키마 정의 
  
 ```python
 
