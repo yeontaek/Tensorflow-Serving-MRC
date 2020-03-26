@@ -91,6 +91,8 @@ target=/models/bert -e MODEL_NAME=bert -t tensorflow/serving:latest-gpu &
 $ saved_model_cli show --dir bert-24-layer/1/ --all
 ```
 
+<img src="./saved_model_cli.png" width="650"/>
+
 <br>
 <br>
 
