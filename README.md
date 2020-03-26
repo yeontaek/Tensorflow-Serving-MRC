@@ -6,6 +6,8 @@ This repository is for Korean MRC service methods using Tensorflow Serving.
 
 * Chrome extension, 한국어 MRC : 준비중
 
+<br>
+
 ## Export Estimator model with BERT
 
 
@@ -38,7 +40,6 @@ def serving_input_receiver_fn():
     features = tf.parse_example(serialized_tf_example, feature_spec)
     return tf.estimator.export.ServingInputReceiver(features, receiver_tensors)
 ```
-<br>
 <br>
 
 ### 2. Load Model 
