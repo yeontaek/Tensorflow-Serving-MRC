@@ -57,20 +57,25 @@ predictions = predictor_fn({'examples': examples})
 
 ## TensorFlow Serving with Docker
 
-TensorFlow Serving을 이용하여 모델을 서비스하기 위해서는 관련 Docker를 사용하여야 한다. 아래 명령어를 통해 최신 TensorFlow Serving Docker 이미지를 가져올 수 있다. 또한 서비스 하고자 하는 Tensorflow 버전에 맞게 Docker를 사용하면 된다. ([tensorflow/serving docker
+TensorFlow Serving을 이용하여 모델을 서비스하기 위해서는 관련 Docker를 사용하여야 한다. 아래 명령어를 통해 최신 TensorFlow Serving Docker 이미지를 가져올 수 있다. 또는 서비스 하고자 하는 Tensorflow 버전에 맞게 Docker 이미지를 사용하면 된다. ([tensorflow/serving docker
 ](https://hub.docker.com/r/tensorflow/serving/tags/))
 
 ```bash
 $ docker pull tensorflow/serving
 
-or 
-
 $ docker pull tensorflow/serving:latest-gpu
 ```
 
+본 repository에서는 nvidia-gpu를 이용한 docker 이미지 실행 방법에 대해서만 설명한다. 설치된 Docker를 이용하여, Tensorflow Serving을 위해서는 아래와 같다.
 
+- p : port 번호
+- source : pb모델의 경로 
+- MODEL_NAME : 
+- target : 
 
-
+```bash
+docker run --runtime=nvidia -p 8501:8501 --mount type=bind,source=/home/lgsp_gcp/XX_KORQUAD_MODEL/24-layer-none, target=/models/bert -e MODEL_NAME=bert -t tensorflow/serving:latest-gpu &
+```
 
 
 ## TensorFlow Serving REST API
