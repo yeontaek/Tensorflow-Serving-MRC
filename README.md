@@ -80,8 +80,15 @@ target=/models/bert -e MODEL_NAME=bert -t tensorflow/serving:latest-gpu &
 
 ## TensorFlow Serving REST API
 
-
-## Flask 
+```python
+resp = requests.post('http://ip:port/v1/models/bert:predict', 
+		json={
+			"signature_name": "serving_default",
+                	'instances': [
+                   	 {'examples': {'b64': base64.b64encode(example.SerializeToString()).decode('utf-8')}}
+                ]})
+resp.raise_for_status()
+```
 
 
 ## 참고 
