@@ -9,7 +9,7 @@ This repository is for Korean MRC service methods using Tensorflow Serving.
 ## Export Estimator model with BERT
 
 
-1. Export Model 
+### 1. Export Model 
 
 Estimator model을 export할 경우 export_savedmodel을 사용하여, BERT모델을 PB 형태로 . export_savedmodel의 매개변수는 아래와 같다. 
 
@@ -41,7 +41,7 @@ def serving_input_receiver_fn():
 <br>
 <br>
 
-2. Load Model 
+### 2. Load Model 
 
 
 ```python
