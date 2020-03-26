@@ -6,7 +6,7 @@ This repository is for Korean MRC service methods using Tensorflow Serving.
 
 * Chrome extension, 한국어 MRC : 준비중
 
-![Tensorflow Serving](https://yjucho1.github.io/assets/img/2018-12-26/fig2.jpeg){: width="300" height="300"}
+![Tensorflow Serving](https://yjucho1.github.io/assets/img/2018-12-26/fig2.jpeg){: width="200" height="200"}
 
 ## Export Estimator model with BERT
 
