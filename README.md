@@ -83,10 +83,10 @@ target=/models/bert -e MODEL_NAME=bert -t tensorflow/serving:latest-gpu &
 
 ## 3. TensorFlow Serving REST API
 
-실행된 Tensorflow Serving server에 Prediction 하기 위해서는 POST 형태로 호출해야 한다. 특히 json 변수에는 아래 정보가 반드시 포함되어 있어야 한다.
+실행된 Tensorflow Serving server에 Prediction 하기 위해서는 POST 형태로 호출해야 한다. 특히 json 변수에는 아래 정보가 포함되어 있어야 한다.
 
 - signature_name : 
-- instances : prediction 하고자 하는 example 값들을 입력한다. SerializeToString으로 된 example의 경우 반드시 base64 인코딩을 해서 전달해야 한다. 
+- instances : prediction 하고자 하는 example(paragraph, question) 값을 입력한다. SerializeToString으로 된 example의 경우 반드시 base64 인코딩을 해서 전달해야 한다. 
 
 ```python
 resp = requests.post('http://ip:port/v1/models/bert:predict', 
