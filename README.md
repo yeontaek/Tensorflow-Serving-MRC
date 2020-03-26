@@ -67,7 +67,7 @@ $ docker pull tensorflow/serving (CPU)
 $ docker pull tensorflow/serving:latest-gpu (GPU)
 ```
 
-본 repository에서는 nvidia-gpu를 이용한 docker 이미지 실행 방법에 대해서만 설명한다. 설치된 Docker를 이용하여, Tensorflow Serving server를 실행하는 명령어는 아래와 같다.
+본 repository에서는 nvidia-gpu를 이용한 docker 이미지 실행 방법에 대해서만 설명한다. 설치된 Docker를 이용하여, Tensorflow Serving server를 실행하는 명령어는 아래와 같다. nvidia-gpu를 사용하기 위해서는 반드시 <b> --runtime=nvidia</b>를 입력해줘야 한다. 
 
 - port : port 번호
 - source : pb모델의 경로 
