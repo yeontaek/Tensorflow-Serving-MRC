@@ -111,6 +111,9 @@ https://www.tensorflow.org/tfx/serving/docker
 
 https://stackoverflow.com/questions/51776489/correct-payload-for-tensorflow-serving-rest-api
 
+<br>
+<br>
+
 
 
 
