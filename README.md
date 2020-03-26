@@ -94,10 +94,6 @@ $ saved_model_cli show --dir bert-24-layer/1/ --all
 <img src="./saved_model_cli.png" width="650"/>
 
 <br>
-<br>
-
-
- 
  
 - instances : prediction 하고자 하는 example(paragraph, question) 값을 입력한다. SerializeToString으로 된 example의 경우 반드시 base64 인코딩을 해서 전달해야 한다. 
 
