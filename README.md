@@ -59,8 +59,7 @@ predictions = predictor_fn({'examples': examples})
 
 ## 2. TensorFlow Serving with Docker
 
-TensorFlow Serving을 이용하여 모델을 서비스하기 위해서는 관련 Docker를 사용하여야 한다. 아래 명령어를 통해 최신 TensorFlow Serving Docker 이미지를 가져올 수 있다. 또는 서비스 하고자 하는 Tensorflow 버전에 맞게 Docker 이미지를 사용하면 된다. ([docker hub
-](https://hub.docker.com/r/tensorflow/serving/tags/))
+Tensorflow serving을 위해서는 위에서 생성한 pb 파일을 활용하여, Tensorflow serving server를 실행해야 한다. 이를 위해 관련 Docker 이미지를 이용해 실행하는 방법에 대해서 설명한다. 먼저 아래 명령어를 통해 최신 TensorFlow Serving Docker 이미지를 가져온다. 또는 서비스 하고자 하는 Tensorflow 버전에 맞는 Docker 이미지를 가져와서 ([docker hub](https://hub.docker.com/r/tensorflow/serving/tags/))
 
 ```bash
 $ docker pull tensorflow/serving (CPU)
@@ -72,7 +71,7 @@ $ docker pull tensorflow/serving:latest-gpu (GPU)
 
 - port : port 번호
 - source : pb모델의 경로 
-- target : post 형태로 호출한 모델 이름 (e.g. http://ip:port/v1/models/bert:predict)
+- target : client에서 post 형태로 호출할 모델 이름 (e.g. http://ip:port/v1/models/bert:predict)
 
 ```python
 docker run --runtime=nvidia -p 8501:8501 --mount type=bind,source=output_dir/bert-24-layer,
