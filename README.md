@@ -68,8 +68,7 @@ $ docker pull tensorflow/serving:latest-gpu
 
 - p : port 번호
 - source : pb모델의 경로 
-- MODEL_NAME : 
-- target : 
+- target : post 형태로 호출한 모델 이름 
 
 ```python
 docker run --runtime=nvidia -p 8501:8501 --mount type=bind,source=output_dir/bert-24-layer,
@@ -85,11 +84,7 @@ resp = requests.post('http://ip:port/v1/models/bert:predict',
 		json={
 			"signature_name": "serving_default",
                 	'instances': [
-                   	 {'examples': 
-			 		{
-					   'b64': base64.b64encode(example.SerializeToString()).decode('utf-8')
-					}
-			 }
+                   	 {'examples': {'b64': base64.b64encode(example.SerializeToString()).decode('utf-8')}}
                 ]})
 resp.raise_for_status()
 ```
