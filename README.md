@@ -4,13 +4,14 @@ This repository is for MRC service methods using Tensorflow Serving.
 
 * Whale extension, 한국어 MRC : https://store.whale.naver.com/detail/hkmamenommegcobnflgojmfikpkfgjng
 
+<br>
 
 ## Export Estimator model with BERT
 
 
 ```python
 
- estimator.export_savedmodel(export_dir_base="output_dit/24-layer-none",
+estimator.export_savedmodel(export_dir_base="output_dit/24-layer-none",
                              checkpoint_path=FLAGS.init_checkpoint,
                              serving_input_receiver_fn=serving_input_receiver_fn)
 
@@ -30,7 +31,7 @@ def serving_input_receiver_fn():
     return tf.estimator.export.ServingInputReceiver(features, receiver_tensors)
 ```
 
-
+<br>
 
 
 ## TensorFlow Serving with Docker
