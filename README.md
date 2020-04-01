@@ -10,9 +10,12 @@ I developed the Whale extension app using Tensorflow Serving and opened it to th
 
 <br>
 
+## 0. Tensorflow Serving
+
 <img src="https://yjucho1.github.io/assets/img/2018-12-26/fig2.jpeg" width="650"/>
 
-## 0. Tensorflow Serving
+
+
 
 
 
