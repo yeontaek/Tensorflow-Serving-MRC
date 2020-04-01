@@ -12,11 +12,15 @@ I developed the Whale extension app using Tensorflow Serving and opened it to th
 
 ## 0. Tensorflow Serving
 
+<img src="https://miro.medium.com/max/1400/0*8ELDpw3oWjLLo-q-.png" width="350"/>
+
+Serving이란 학습된 모델을 추론을 위해 사용하거는 것을 말하며, 일반적으로는 
+
+
+
+
+
 <img src="https://miro.medium.com/max/382/1*LM8nxisx4VAdC9G82OVtRg.png" width="350"/>
-
-
-
-
 
 
 ## 1. Export Estimator model with BERT
