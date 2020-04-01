@@ -12,7 +12,7 @@ I developed the Whale extension app using Tensorflow Serving and opened it to th
 
 ## 0. Tensorflow Serving
 
-<img src="https://miro.medium.com/max/382/1*LM8nxisx4VAdC9G82OVtRg.png" width="650"/>
+<img src="https://miro.medium.com/max/382/1*LM8nxisx4VAdC9G82OVtRg.png" width="450"/>
 
 
 
