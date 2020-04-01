@@ -12,7 +12,7 @@ I developed the Whale extension app using Tensorflow Serving and opened it to th
 
 ## 0. Tensorflow Serving
 
-Serving 이란 추론을 위해 우리가 학습한 모델을 사용하거나 서비스하는 기술을 말한다. 예를 들어, 아래 그림에 클라이언트는 분류해야 하는 입력 이미지(e.g. 고양이)가 있다. 이 이미지를 특정 인코딩 형식으로 변환하여, 서버 측에 전달한다. 서버에는 학습된 모델을 호출하여, 추론 결과를 서버에서 클라이언트로 추론 결과를 전달한다. 이러한 일련의 과정을 Serving이라고 한다.
+Serving 이란 추론을 위해 우리가 학습한 모델을 사용하거나 서비스하는 기술을 말한다. 예를 들어, 아래 그림에 클라이언트는 분류해야 하는 입력 이미지(e.g. 고양이)가 있다. 이 이미지를 특정 인코딩 형식으로 변환하여, 서버 측에 전달한다. 서버에는 학습된 모델을 호출하여, 추론 결과를 클라이언트로 전달한다. 이러한 일련의 과정을 Serving이라고 한다.
 
 <img src="https://miro.medium.com/max/1400/0*8ELDpw3oWjLLo-q-.png" width="550"/>
 <br>
