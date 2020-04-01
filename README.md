@@ -19,10 +19,12 @@ Serving 이란 추론을 위해 우리가 학습한 모델을 사용하거나 �
 
 
 
-
-
-
 <img src="https://miro.medium.com/max/382/1*LM8nxisx4VAdC9G82OVtRg.png" width="350"/>
+
+
+
+<img src="https://miro.medium.com/max/1288/1*bZJkbwx9Vx5TR38jcmF70Q.png" width="350"/>
+
 
 
 ## 1. Export Estimator model with BERT
