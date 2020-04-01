@@ -128,6 +128,8 @@ https://www.tensorflow.org/tfx/serving/docker
 
 https://stackoverflow.com/questions/51776489/correct-payload-for-tensorflow-serving-rest-api
 
+https://medium.com/google-developer-experts/building-robust-production-ready-deep-learning-vision-models-in-minutes-acd716f6450a
+
 <br>
 <br>
 
